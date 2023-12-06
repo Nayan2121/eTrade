@@ -46,7 +46,7 @@ export default function AllPages() {
     <>
       {/* HOME-SECTION-COMPONENTS */}
 
-      <Home/> 
+      {/* <Home/>  */}
 
 
       {/* SHOP-SECTION-COMPONENTS  */}
@@ -78,7 +78,7 @@ export default function AllPages() {
       {/* <Typography/> */}
 
       {/* ABOUT-SECTION-COMPONENT  */}
-      {/* <About /> */}
+      <About />
 
       {/* BLOG-SECTION-CPMPONENTS  */}
       {/* <BlogList /> */}
