@@ -37,6 +37,8 @@ import VideoPost from '../Blog/VideoPost'
 import AudioPost from '../Blog/AudioPost'
 import QuotePost from '../Blog/QuotePost'
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 
 
 
@@ -44,7 +46,25 @@ import QuotePost from '../Blog/QuotePost'
 export default function AllPages() {
   return (
     <>
+
       {/* HOME-SECTION-COMPONENTS */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/*' element={<Error404/>}></Route>
+          <Route path='/ShopWithSidebar' element={<ShopWithSidebar/>}></Route>
+          <Route path='/ShopNoSidebar' element={<ShopNoSidebar/>}></Route>
+          <Route path='/ProductV1' element={<ProductV1/>}></Route>
+          <Route path='/ProductV2' element={<ProductV2/>}></Route>
+          <Route path='/ProductV3' element={<ProductV3/>}></Route>
+          <Route path='/ProductV4' element={<ProductV4/>}></Route>
+          <Route path='/ProductV5' element={<ProductV5/>}></Route>
+          <Route path='/ProductV6' element={<ProductV6/>}></Route>
+          <Route path='/ProductV7' element={<ProductV7/>}></Route>
+          
+        </Routes>
+      </BrowserRouter>
 
       {/* <Home/>  */}
 
@@ -78,7 +98,7 @@ export default function AllPages() {
       {/* <Typography/> */}
 
       {/* ABOUT-SECTION-COMPONENT  */}
-      <About />
+      {/* <About /> */}
 
       {/* BLOG-SECTION-CPMPONENTS  */}
       {/* <BlogList /> */}
