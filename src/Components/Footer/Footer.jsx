@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Footer/HomeFootstyle.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
 
@@ -69,22 +70,22 @@ const Footer = () => {
                     <div className='Account-part'>
                         <b className='text-gray-800'>Account</b>
                         <ul className='list-item text-gray-500 font-medium mt-6'>
-                            <li className='mt-4'><a className='link hover:text-gray-800 duration-500 ' href="#">My Account</a></li>
-                            <li className='mt-4'><a className='link hover:text-gray-800 duration-500 ' href="#">Login / Register</a></li>
-                            <li className='mt-4'><a className='link hover:text-gray-800 duration-500 ' href="#">Cart</a></li>
-                            <li className='mt-4'><a className='link hover:text-gray-800 duration-500 ' href="#">Wishlist</a></li>
-                            <li className='mt-4'><a className='link hover:text-gray-800 duration-500 ' href="#">Shop</a></li>
+                            <li className='mt-4'><Link to="/Account" className='link hover:text-gray-800 duration-500 ' href="#">My Account</Link></li>
+                            <li className='mt-4'><Link to="/SignUp" className='link hover:text-gray-800 duration-500 ' href="#">Login / Register</Link></li>
+                            <li className='mt-4'><Link to="/Cart" className='link hover:text-gray-800 duration-500 ' href="#">Cart</Link></li>
+                            <li className='mt-4'><Link to="/Wishlist" className='link hover:text-gray-800 duration-500 ' href="#">Wishlist</Link></li>
+                            <li className='mt-4'><Link to="/ShopWithSidebar" className='link hover:text-gray-800 duration-500 ' href="#">Shop</Link></li>
                         </ul>
                     </div>
 
                     <div className='QuickLink-part'>
                         <b className='text-gray-800'>Quick Link</b>
                         <ul className='list-item text-gray-500 font-medium mt-6'>
-                            <li className='mt-4'><a className='link hover:text-gray-800 duration-500 ' href="#">Privacy Policy</a></li>
-                            <li className='mt-4'><a className='link hover:text-gray-800 duration-500 ' href="#">Terms Of Use</a></li>
-                            <li className='mt-4'><a className='link hover:text-gray-800 duration-500 ' href="#">FAQ</a></li>
-                            <li className='mt-4'><a className='link hover:text-gray-800 duration-500 ' href="#">Contact</a></li>
-                            <li className='mt-4'><a className='link hover:text-gray-800 duration-500 ' href="#">Contact</a></li>
+                            <li className='mt-4'><Link to="/PrivacyPolicy" className='link hover:text-gray-800 duration-500 ' href="#">Privacy Policy</Link></li>
+                            <li className='mt-4'><Link to="/TermsOfUse" className='link hover:text-gray-800 duration-500 ' href="#">Terms Of Use</Link></li>
+                            <li className='mt-4'><Link to="/TermsOfUse" className='link hover:text-gray-800 duration-500 ' href="#">FAQ</Link></li>
+                            <li className='mt-4'><Link to="/Contact" className='link hover:text-gray-800 duration-500 ' href="#">Contact</Link></li>
+                            <li className='mt-4'><Link to="/Contact" className='link hover:text-gray-800 duration-500 ' href="#">Contact</Link></li>
                         </ul>
                     </div>
 

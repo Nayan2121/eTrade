@@ -2,6 +2,7 @@ import React from 'react'
 import { AllTopBar } from '../../Components/AllDropdown/AllDropdownHover'
 import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import Footer from '../../Components/Footer/Footer'
+import { Link } from 'react-router-dom'
 
 const Error404 = () => {
     return (
@@ -29,7 +30,7 @@ const Error404 = () => {
                             <h1 className='text-5xl font-bold text-[#27272E] mb-10'>Page not found</h1>
                             <p className='text-gray-500'>It seems like we dont find what you searched. The page you were looking for doesn't exist, isn't available loading incorrectly.</p>
                             <div className='mt-14'>
-                                <a href="#" className=" relative px-12 py-5 rounded-md font-semibold  text-white bg-[#FF497C]
+                                <Link to="/" href="#" className=" relative px-12 py-5 rounded-md font-semibold  text-white bg-[#FF497C]
                         before:absolute 
                         before:content-[''] 
                         before:w-[220px] 
@@ -42,7 +43,7 @@ const Error404 = () => {
                         before:-z-10 
                         before:hover:scale-110  
                         before:duration-300
-                         ">Back To Home <i class="ri-arrow-right-line"></i></a>
+                         ">Back To Home <i class="ri-arrow-right-line"></i></Link>
                             </div>
                         </div>
 

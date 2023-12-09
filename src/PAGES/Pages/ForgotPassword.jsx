@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ForgotPassword = () => {
     return (
@@ -11,7 +12,7 @@ const ForgotPassword = () => {
                     </span>
                     <div className='flex items-center'>
                         <p className='text-[#292930] text-sm font-medium'>Already a member?</p>
-                        <a href="#" className=" relative px-10 py-5 rounded-md font-semibold ml-10 text-white bg-[#ff497c] 
+                        <Link to="/SignIn" href="#" className=" relative px-10 py-5 rounded-md font-semibold ml-10 text-white bg-[#ff497c] 
                         before:absolute 
                         before:content-[''] 
                         before:w-[130px] 
@@ -23,7 +24,7 @@ const ForgotPassword = () => {
                         before:bg-[#ff497c]  
                         before:-z-10 
                         before:hover:scale-110  
-                        before:duration-300 ">Sign In</a>
+                        before:duration-300 ">Sign In</Link>
                     </div>
                 </div>
 

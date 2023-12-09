@@ -1,5 +1,6 @@
 import React from 'react'
 import '../AllDropdown/AllDropdownstyle.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -70,8 +71,8 @@ export const AllRightpart = () => {
     <div className='right-part'>
       <div className='list-none flex text-sm'>
         <li className='hover:text-blue-500 cursor-pointer ml-6 text-gray-400'>Help</li>
-        <li className='hover:text-blue-500 cursor-pointer ml-6 text-gray-400'>Join Us</li>
-        <li className='hover:text-blue-500 cursor-pointer ml-6 text-gray-400'>Sign In</li>
+        <Link to="/SignUp" className='hover:text-blue-500 cursor-pointer ml-6 text-gray-400'>Join Us</Link>
+        <Link to="/SignIn" className='hover:text-blue-500 cursor-pointer ml-6 text-gray-400'>Sign In</Link>
       </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ResetPassword = () => {
     return (
@@ -11,7 +12,7 @@ const ResetPassword = () => {
                     </span>
                     <div className='flex items-center text-[#292930] font-medium text-sm'>
                         <p>Already a member?</p>
-                        <a href="#" className="hover:text-[#3577F0]">Sign In</a>
+                        <Link to="/SignIn" href="#" className="hover:text-[#3577F0]">Sign In</Link>
                     </div>
                 </div>
 

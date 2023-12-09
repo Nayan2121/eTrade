@@ -4,6 +4,7 @@ import { AllTopBar } from '../../Components/AllDropdown/AllDropdownHover'
 import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import SubscribePhoto from '../../Components/SubscribePhoto'
 import Footer from '../../Components/Footer/Footer'
+import { Link } from 'react-router-dom'
 
 const ProductV4 = () => {
     return (
@@ -95,7 +96,7 @@ const ProductV4 = () => {
                                         </div>
                                         <div className='flex items-center'>
                                             <div className='mx-5'>
-                                                <a href="#" className='relative z-10 font-bold bg-[#3577F0] text-white px-32 py-5 rounded-md 
+                                                <Link to="/Cart" href="#" className='relative z-10 font-bold bg-[#3577F0] text-white px-32 py-5 rounded-md 
                                                 before:absolute
                                                 before:content-[""]
                                                 before:px-32
@@ -109,11 +110,11 @@ const ProductV4 = () => {
                                                 before:hover:scale-105
                                                 before:duration-300
                                                 before:rounded-md
-                                               '>Add to Cart</a>
+                                               '>Add to Cart</Link>
                                             </div>
 
                                             <div className='flex mx-5'>
-                                                <a href="#" className='relative z-10 px-1 py-3 border-2 rounded-md
+                                                <Link to="/Wishlist" href="#" className='relative z-10 px-1 py-3 border-2 rounded-md
                                                 before:absolute 
                                                 before:h-[100%]
                                                 before:w-[100%]
@@ -129,7 +130,7 @@ const ProductV4 = () => {
                                                 before:right-0
                                                 '>
                                                     <i class="ri-heart-line text-2xl px-4 py-4  text-gray-600 hover:border-none hover:text-white duration-300"></i>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

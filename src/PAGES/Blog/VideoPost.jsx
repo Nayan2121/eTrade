@@ -3,6 +3,7 @@ import { AllTopBar } from '../../Components/AllDropdown/AllDropdownHover'
 import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import SubscribePhoto from '../../Components/SubscribePhoto'
 import Footer from '../../Components/Footer/Footer'
+import { Link } from 'react-router-dom'
 
 const VideoPost = () => {
     return (
@@ -164,32 +165,32 @@ const VideoPost = () => {
                                 <div className='BOX-1 border p-8 rounded-md'>
                                     <h1 className='text-[#292930] text-xl font-medium mb-8'>Latest Posts</h1>
                                     <div className='flex  border-b border-gray-100 pb-5'>
-                                        <div className='rounded-lg overflow-hidden'>
-                                            <img className='bg-cover rounded-lg h-20 w-[170px] hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/video-post/asset 8.png" alt="" />
-                                        </div>
-                                        <div className='ml-10'>
-                                            <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Dubai’s FRAME Offers its Take on the</a>
-                                            <h1 className='text-sm text-gray-500 mt-3'>Mar 27, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
-                                        </div>
+                                    <Link to="/StandardPost" className='rounded-lg overflow-hidden'>
+                                        <img className='bg-cover rounded-lg h-20 w-[170px] hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 9.png" alt="" />
+                                    </Link>
+                                    <div className='ml-10'>
+                                        <Link to="/StandardPost" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Dubai’s FRAME Offers its Take on the</Link>
+                                        <h1 className='text-sm text-gray-500 mt-3'>Mar 27, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
                                     </div>
-                                    <div className='flex  border-b border-gray-100 py-5'>
-                                        <div className='rounded-lg overflow-hidden'>
-                                            <img className='bg-cover rounded-lg h-20 w-[188px] hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/video-post/asset 9.png" alt="" />
-                                        </div>
-                                        <div className='ml-10'>
-                                            <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Apple presents App Best of 2020 winners</a>
-                                            <h1 className='text-sm text-gray-500 mt-3'>Mar 20, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
-                                        </div>
+                                </div>
+                                <div className='flex  border-b border-gray-100 py-5'>
+                                    <Link to="/StandardPost" className='rounded-lg overflow-hidden'>
+                                        <img className='bg-cover rounded-lg h-20 w-[188px] hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 10.png" alt="" />
+                                    </Link>
+                                    <div className='ml-10'>
+                                        <Link to="/StandardPost" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Apple presents App Best of 2020 winners</Link>
+                                        <h1 className='text-sm text-gray-500 mt-3'>Mar 20, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
                                     </div>
-                                    <div className='flex pt-5'>
-                                        <div className='rounded-lg overflow-hidden'>
-                                            <img className='bg-cover rounded-lg h-20 w-[200px] hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/video-post/asset 10.png" alt="" />
-                                        </div>
-                                        <div className='ml-10'>
-                                            <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Gallaudet University innovation in education</a>
-                                            <h1 className='text-sm text-gray-500 mt-3'>Mar 15, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
-                                        </div>
+                                </div>
+                                <div className='flex pt-5'>
+                                    <Link to="/StandardPost" className='rounded-lg overflow-hidden'>
+                                        <img className='bg-cover rounded-lg h-20 w-[200px] hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 11.png" alt="" />
+                                    </Link>
+                                    <div className='ml-10'>
+                                        <Link to="/StandardPost" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Gallaudet University innovation in education</Link>
+                                        <h1 className='text-sm text-gray-500 mt-3'>Mar 15, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
                                     </div>
+                                </div>
                                 </div>
 
                                 <div className='BOX-2 border p-8 rounded-md mt-14'>
@@ -304,10 +305,12 @@ const VideoPost = () => {
                         </div>
                         <div className='grid grid-cols-3 gap-10'>
                             <div>
-                                <img className='w-full rounded-lg mb-10' src="./src/assets/blog/video-post/asset 18.png" alt="" />
-                                <h1 className='text-[#292930] text-xl font-semibold hover:text-[#3577F0] cursor-pointer duration-300 inline'>With an Irreverent Twist, AMBUSH® Highlights Converse's Outdoor Heritage</h1>
+                                <Link to="/StandardPost">
+                                    <img className='w-full rounded-lg mb-10' src="./src/assets/blog/gallery-post/asset 19.png" alt="" />
+                                </Link>
+                                <Link to="/StandardPost"><a className='text-[#292930] text-xl font-semibold hover:text-[#3577F0] cursor-pointer duration-300 inline'>With an Irreverent Twist, AMBUSH® Highlights Converse's Outdoor Heritage</a></Link>
                                 <div className='flex items-center mb-7  py-10'>
-                                    <img className='bg-cover w-12 mr-5 rounded-full' src="./src/assets/blog/video-post/asset 3.png" alt="" />
+                                    <img className='bg-cover w-12 mr-5 rounded-full' src="./src/assets/blog/gallery-post/asset 4.png" alt="" />
                                     <div>
                                         <h1 className='text-[#292930] text-base font-semibold hover:text-[#3577F0] cursor-pointer duration-300 leading-8 inline'>Leslie Alexander</h1>
                                         <h1 className='text-sm text-gray-500'>Fab 17, 2019 <span className=' border-r-2 border-gray-300 mx-2'></span> 300k Views</h1>
@@ -315,10 +318,12 @@ const VideoPost = () => {
                                 </div>
                             </div>
                             <div>
-                                <img className='w-full rounded-lg mb-10' src="./src/assets/blog/video-post/asset 14.png" alt="" />
-                                <h1 className='text-[#292930] text-xl font-semibold hover:text-[#3577F0] cursor-pointer duration-300 inline'>UCLA Athletics Reaches Multi-Year Agreement with NIKE, Inc. and Jordan Brand</h1>
+                                <Link to="/StandardPost">
+                                    <img className='w-full rounded-lg mb-10' src="./src/assets/blog/gallery-post/asset 15.png" alt="" />
+                                </Link>
+                                <Link to="/StandardPost" className='text-[#292930] text-xl font-semibold hover:text-[#3577F0] cursor-pointer duration-300 inline'>UCLA Athletics Reaches Multi-Year Agreement with NIKE, Inc. and Jordan Brand</Link>
                                 <div className='flex items-center mb-7  py-10'>
-                                    <img className='bg-cover w-12 mr-5 rounded-full' src="./src/assets/blog/video-post/asset 15.png" alt="" />
+                                    <img className='bg-cover w-12 mr-5 rounded-full' src="./src/assets/blog/gallery-post/asset 16.png" alt="" />
                                     <div>
                                         <h1 className='text-[#292930] text-base font-semibold hover:text-[#3577F0] cursor-pointer duration-300 leading-8 inline'>Julian Vinn</h1>
                                         <h1 className='text-sm text-gray-500'>Mar 28, 2020 <span className=' border-r-2 border-gray-300 mx-2'></span> 300k Views</h1>
@@ -326,10 +331,12 @@ const VideoPost = () => {
                                 </div>
                             </div>
                             <div>
-                                <img className='w-full rounded-lg mb-10' src="./src/assets/blog/video-post/asset 16.png" alt="" />
-                                <h1 className='text-[#292930] text-xl font-semibold hover:text-[#3577F0] cursor-pointer duration-300 inline'>An oral history of the AIM away message by the people who were there</h1>
+                                <Link>
+                                    <img className='w-full rounded-lg mb-10' src="./src/assets/blog/gallery-post/asset 17.png" alt="" />
+                                </Link>
+                                <Link className='text-[#292930] text-xl font-semibold hover:text-[#3577F0] cursor-pointer duration-300 inline'>An oral history of the AIM away message by the people who were there</Link>
                                 <div className='flex items-center mb-7  py-10'>
-                                    <img className='bg-cover w-12 mr-5 rounded-full' src="./src/assets/blog/video-post/asset 17.png" alt="" />
+                                    <img className='bg-cover w-12 mr-5 rounded-full' src="./src/assets/blog/gallery-post/asset 18.png" alt="" />
                                     <div>
                                         <h1 className='text-[#292930] text-base font-semibold hover:text-[#3577F0] cursor-pointer duration-300 leading-8 inline'>Ariana Grande</h1>
                                         <h1 className='text-sm text-gray-500'>Apr 20, 2021 <span className=' border-r-2 border-gray-300 mx-2'></span> 300k Views</h1>

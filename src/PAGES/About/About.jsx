@@ -4,12 +4,10 @@ import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import Speaker from '../../Components/Speaker'
 import SubscribePhoto from '../../Components/SubscribePhoto'
 import Footer from '../../Components/Footer/Footer'
-
-// Import Swiper styles
 import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
 import 'swiper/css';
-
-
+import { Link } from 'react-router-dom'
 
 const About = () => {
     return (
@@ -96,79 +94,70 @@ const About = () => {
                                 </div>
                             </div>
 
-                            {/* <div className='pl-24 mt-10 grid grid-cols-5 gap-10'> */}
-                            <Swiper
-                                loop={true}
-                                slidesPerView={4}
-                                spaceBetween={30}
-                                className="mySwiper"
-                            >
-                                <SwiperSlide>
-                                    <div>
-                                        <div className='rounded-md overflow-hidden'>
-                                            <img className='bg-cover hover:scale-110 duration-300' src="../src/assets/about/asset 10.png" alt="" />
+                            {/* <div className='pl-24 mt-10 grid grid-cols-4 gap-10'> */}
+                                <Swiper
+                                    loop={true}
+                                    slidesPerView={4}
+                                    spaceBetween={30}
+                                    className="mySwiper"
+                                >
+                                    <SwiperSlide>
+                                        <div>
+                                            <div className='rounded-md overflow-hidden max-w-[330px]'>
+                                                <img className='bg-cover hover:scale-110 duration-300' src="../src/assets/about/asset 10.png" alt="" />
+                                            </div>
+                                            <h1 className='text-gray-500 mt-5'>Founder</h1>
+                                            <p className='text-lg text-[#27272E] font-bold mb-16'>Rosalina D. Willson</p>
                                         </div>
-                                        <h1 className='text-gray-500 mt-5'>Founder</h1>
-                                        <p className='text-lg text-[#27272E] font-bold mb-16'>Rosalina D. Willson</p>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div>
-                                        <div className='rounded-md overflow-hidden'>
-                                            <img className='bg-cover hover:scale-110 duration-300' src="../src/assets/about/asset 7.png" alt="" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div>
+                                            <div className='rounded-md overflow-hidden max-w-[330px]'>
+                                                <img className='bg-cover hover:scale-110 duration-300' src="../src/assets/about/asset 7.png" alt="" />
+                                            </div>
+                                            <h1 className='text-gray-500 mt-5'>CEO</h1>
+                                            <p className='text-lg text-[#27272E] font-bold mb-16'>Ukolilix X. Xilanorix</p>
                                         </div>
-                                        <h1 className='text-gray-500 mt-5'>CEO</h1>
-                                        <p className='text-lg text-[#27272E] font-bold mb-16'>Ukolilix X. Xilanorix</p>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div>
-                                        <div className='rounded-md overflow-hidden'>
-                                            <img className='bg-cover hover:scale-110 duration-300 ' src="../src/assets/about/asset 8.png" alt="" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div>
+                                            <div className='rounded-md overflow-hidden max-w-[330px]'>
+                                                <img className='bg-cover hover:scale-110 duration-300 ' src="../src/assets/about/asset 8.png" alt="" />
+                                            </div>
+                                            <h1 className='text-gray-500 mt-5'>Designer</h1>
+                                            <p className='text-lg text-[#27272E] font-bold mb-16'>Alonso M. Miklonax</p>
                                         </div>
-                                        <h1 className='text-gray-500 mt-5'>Designer</h1>
-                                        <p className='text-lg text-[#27272E] font-bold mb-16'>Alonso M. Miklonax</p>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div>
-                                        <div className='rounded-md overflow-hidden'>
-                                            <img className='bg-cover hover:scale-110 duration-300 ' src="../src/assets/about/asset 9.png" alt="" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div>
+                                            <div className='rounded-md overflow-hidden max-w-[330px]'>
+                                                <img className='bg-cover hover:scale-110 duration-300 ' src="../src/assets/about/asset 9.png" alt="" />
+                                            </div>
+                                            <h1 className='text-gray-500 mt-5'>Designer</h1>
+                                            <p className='text-lg text-[#27272E] font-bold mb-16'>Alonso M. Miklonax</p>
                                         </div>
-                                        <h1 className='text-gray-500 mt-5'>Designer</h1>
-                                        <p className='text-lg text-[#27272E] font-bold mb-16'>Alonso M. Miklonax</p>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div>
-                                        <div className='rounded-md overflow-hidden'>
-                                            <img className='bg-cover hover:scale-110 duration-300' src="../src/assets/about/asset 7.png" alt="" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div>
+                                            <div className='rounded-md overflow-hidden max-w-[330px]'>
+                                                <img className='bg-cover hover:scale-110 duration-300' src="../src/assets/about/asset 7.png" alt="" />
+                                            </div>
+                                            <h1 className='text-gray-500 mt-5'>CEO</h1>
+                                            <p className='text-lg text-[#27272E] font-bold mb-16'>Ukolilix X. Xilanorix</p>
                                         </div>
-                                        <h1 className='text-gray-500 mt-5'>CEO</h1>
-                                        <p className='text-lg text-[#27272E] font-bold mb-16'>Ukolilix X. Xilanorix</p>
-                                    </div>
-                                </SwiperSlide>
-                                {/* <SwiperSlide>
-                                    <div>
-                                        <div className='rounded-md overflow-hidden'>
-                                            <img className='bg-cover hover:scale-110 duration-300 ' src="../src/assets/about/asset 9.png" alt="" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div>
+                                            <div className='rounded-md overflow-hidden'>
+                                                <img className='bg-cover hover:scale-110 duration-300' src="../src/assets/about/asset 10.png" alt="" />
+                                            </div>
+                                            <h1 className='text-gray-500 mt-5'>Founder</h1>
+                                            <p className='text-lg text-[#27272E] font-bold mb-16'>Rosalina D. Willson</p>
                                         </div>
-                                        <h1 className='text-gray-500 mt-5'>Designer</h1>
-                                        <p className='text-lg text-[#27272E] font-bold mb-16'>Alonso M. Miklonax</p>
-                                    </div>
-                                </SwiperSlide> */}
-                                {/* <SwiperSlide>
-                                    <div>
-                                        <div className='rounded-md overflow-hidden'>
-                                            <img className='bg-cover hover:scale-110 duration-300' src="../src/assets/about/asset 7.png" alt="" />
-                                        </div>
-                                        <h1 className='text-gray-500 mt-5'>CEO</h1>
-                                        <p className='text-lg text-[#27272E] font-bold mb-16'>Ukolilix X. Xilanorix</p>
-                                    </div>
-                                </SwiperSlide> */}
-                            </Swiper>
+                                    </SwiperSlide>
+                                </Swiper>
+                            {/* </div> */}
                         </div>
-                        {/* </div> */}
                     </div>
 
                     <div className='SOLUTIONS'>
@@ -181,7 +170,7 @@ const About = () => {
                                     <h1 className='text-gray-500 text-sm mb-2'>Features #01</h1>
                                     <h1 className='text-4xl font-bold text-[#27272E] mb-6'>Solutions that work together</h1>
                                     <p className='text-gray-500 text-sm leading-6'>Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.</p>
-                                    <button className="border px-11 py-5 rounded-md font-semibold mt-8 text-[#27272E]  hover:bg-[#3577F0] hover:text-white duration-500">Get In Touch</button>
+                                    <button className="border px-11 py-5 rounded-md font-semibold mt-8 text-[#27272E]  hover:bg-[#3577F0] hover:text-white duration-500"><Link to="/Contact" href="">Get In Touch</Link></button>
                                 </div>
                             </div>
 
@@ -190,7 +179,7 @@ const About = () => {
                                     <h1 className='text-gray-500 text-sm mb-2'>Features #01</h1>
                                     <h1 className='text-4xl font-bold text-[#27272E] mb-6'>Solutions that work together</h1>
                                     <p className='text-gray-500 text-sm leading-6'>Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.</p>
-                                    <button className="border px-11 py-5 rounded-md font-semibold mt-8 text-[#27272E]  hover:bg-[#3577F0] hover:text-white duration-500">Get In Touch</button>
+                                    <button className="border px-11 py-5 rounded-md font-semibold mt-8 text-[#27272E]  hover:bg-[#3577F0] hover:text-white duration-500"><Link to="/Contact" href="">Get In Touch</Link></button>
                                 </div>
                                 <div className='w-[100%] flex justify-end'>
                                     <img className='rounded-lg w-[85%]' src="../src/assets/about/asset 12.png" alt="" />

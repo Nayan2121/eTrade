@@ -3,6 +3,7 @@ import React from 'react'
 import { AllTopBar } from '../../Components/AllDropdown/AllDropdownHover'
 import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import Footer from '../../Components/Footer/Footer'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
     return (
@@ -133,7 +134,7 @@ const Cart = () => {
                                     <h1 className='text-xl font-bold text-[#3577F0]'>$125.00</h1>
                                 </div>
                                 <div className='relative text-center w-full py-5 rounded-md text-white font-bold z-10'>
-                                    <a href="" className='
+                                    <Link to="/Checkout" href="" className='
                                     before:absolute
                                     before:content-[""]
                                     before:bg-[#3577F0]
@@ -145,7 +146,7 @@ const Cart = () => {
                                     before:duration-300
                                     before:rounded-md
                                     before:-z-10
-                                      '>Process to Checkout</a>
+                                      '>Process to Checkout</Link>
                                 </div>
                             </div>
                         </div>

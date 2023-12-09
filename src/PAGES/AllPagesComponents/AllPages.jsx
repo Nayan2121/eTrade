@@ -32,12 +32,12 @@ import BlogList from '../Blog/BlogList'
 import Contact from '../Contact/Contact'
 import BlogGrid from '../Blog/BlogGrid'
 import StandardPost from '../Blog/StandardPost'
-import GallaryPost from '../Blog/GallaryPost'
+import GalleryPost from '../Blog/GallaryPost'
 import VideoPost from '../Blog/VideoPost'
 import AudioPost from '../Blog/AudioPost'
 import QuotePost from '../Blog/QuotePost'
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import TermsOfUse from '../Pages/TermsOfUse'
 
 
 
@@ -46,71 +46,59 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 export default function AllPages() {
   return (
     <>
-
       {/* HOME-SECTION-COMPONENTS */}
-
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/*' element={<Error404/>}></Route>
-          <Route path='/ShopWithSidebar' element={<ShopWithSidebar/>}></Route>
-          <Route path='/ShopNoSidebar' element={<ShopNoSidebar/>}></Route>
-          <Route path='/ProductV1' element={<ProductV1/>}></Route>
-          <Route path='/ProductV2' element={<ProductV2/>}></Route>
-          <Route path='/ProductV3' element={<ProductV3/>}></Route>
-          <Route path='/ProductV4' element={<ProductV4/>}></Route>
-          <Route path='/ProductV5' element={<ProductV5/>}></Route>
-          <Route path='/ProductV6' element={<ProductV6/>}></Route>
-          <Route path='/ProductV7' element={<ProductV7/>}></Route>
-          
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/*' element={<Error404 />}></Route>
+
+          {/* SHOP-SECTION-COMPONENTS  */}
+          <Route path='/ShopWithSidebar' element={<ShopWithSidebar />}></Route>
+          <Route path='/ShopNoSidebar' element={<ShopNoSidebar />}></Route>
+          <Route path='/ProductV1' element={<ProductV1 />}></Route>
+          <Route path='/ProductV2' element={<ProductV2 />}></Route>
+          <Route path='/ProductV3' element={<ProductV3 />}></Route>
+          <Route path='/ProductV4' element={<ProductV4 />}></Route>
+          <Route path='/ProductV5' element={<ProductV5 />}></Route>
+          <Route path='/ProductV6' element={<ProductV6 />}></Route>
+          <Route path='/ProductV7' element={<ProductV7 />}></Route>
+
+          {/* PAGES-SECTION-COMPONENTS  */}
+          <Route path='/Wishlist' element={<Wishlist />}></Route>
+          <Route path='/Cart' element={<Cart />}></Route>
+          <Route path='/Checkout' element={<Checkout />}></Route>
+          <Route path='/Account' element={<Account />}></Route>
+          <Route path='/SignUp' element={<SignUp />}></Route>
+          <Route path='/SignIn' element={<SignIn />}></Route>
+          <Route path='/ForgotPassword' element={<ForgotPassword />}></Route>
+          <Route path='/ResetPassword' element={<ResetPassword />}></Route>
+          <Route path='/PrivacyPolicy' element={<PrivacyPolicy />}></Route>
+          <Route path='/ComingSoon' element={<ComingSoon />}></Route>
+          <Route path='/Error404' element={<Error404 />}></Route>
+          <Route path='/Typography' element={<Typography />}></Route>
+
+          {/* ABOUT-SECTION-COMPONENT  */}
+          <Route path='/About' element={<About />}></Route>
+
+          {/* BLOG-SECTION-CPMPONENTS  */}
+          <Route path='/BlogList' element={<BlogList />}></Route>
+          <Route path='/BlogGrid' element={<BlogGrid />}></Route>
+          <Route path='/StandardPost' element={<StandardPost />}></Route>
+          <Route path='/GalleryPost' element={<GalleryPost />}></Route>
+          <Route path='/VideoPost' element={<VideoPost />}></Route>
+          <Route path='/AudioPost' element={<AudioPost />}></Route>
+          <Route path='/QuotePost' element={<QuotePost />}></Route>
+
+          {/* CONTACT-SECTION-COMPONENT  */}
+          <Route path='/Contact' element={<Contact />}></Route>
+
+
+          {/* TERMS-OF-USE */}
+          <Route path='/TermsOfUse' element={<TermsOfUse />}></Route>
         </Routes>
       </BrowserRouter>
 
-      {/* <Home/>  */}
 
-
-      {/* SHOP-SECTION-COMPONENTS  */}
-
-      {/* <ShopWithSidebar/> */}
-      {/* <ShopNoSidebar /> */}
-      {/* <ProductV1 /> */}
-      {/* <ProductV2 /> */}
-      {/* <ProductV3 /> */}
-      {/* <ProductV4 /> */}
-      {/* <ProductV5 /> */}
-      {/* <ProductV6 /> */}
-      {/* <ProductV7 /> */}
-
-
-      {/* PAGES-SECTION-COMPONENTS  */}
-
-      {/* <Wishlist/> */}
-      {/* <Cart/> */}
-      {/* <Checkout/> */}
-      {/* <Account/> */}
-      {/* <SignUp/>  */}
-      {/* <SignIn/> */}
-      {/* <ForgotPassword/> */}
-      {/* <ResetPassword/> */}
-      {/* <PrivacyPolicy/> */}
-      {/* <ComingSoon/> */}
-      {/* <Error404 /> */}
-      {/* <Typography/> */}
-
-      {/* ABOUT-SECTION-COMPONENT  */}
-      {/* <About /> */}
-
-      {/* BLOG-SECTION-CPMPONENTS  */}
-      {/* <BlogList /> */}
-      {/* <BlogGrid/> */}
-      {/* <StandardPost /> */}
-      {/* <GallaryPost/> */}
-      {/* <VideoPost/> */}
-      {/* <AudioPost/> */}
-      {/* <QuotePost/> */}
-
-      {/* CONTACT-SECTION-COMPONENT  */}
-      {/* <Contact />  */}
     </>
   )
 }

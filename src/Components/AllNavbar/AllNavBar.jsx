@@ -9,17 +9,17 @@ export const AllNavBar = () => {
         <>
             <div className='bg-white shadow-md'>
                 <div className='flex justify-between items-center container mx-auto'>
-                
+
                     {/* logo  */}
-                    <div>
+                    <Link to="/">
                         <img src="./src/assets/home/asset 0.png" alt="" />
-                    </div>
+                    </Link>
 
                     {/* navbar list  */}
                     <div className='grid grid-cols-6 gap-x-10'>
                         <div className='home-dropdown'>
                             <button className='font-semibold underline decoration-[2px] underline-offset-4 h-24 '><span className='text-gray-800 hover:text-black'>Home</span><i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i></button>
-                            <div className='home-content'>
+                            <div className='home-content shadow-lg rounded-md'>
                                 <ul className='list bg-white rounded-md'>
                                     <li><Link to="/" className='text-[#ff497c]' href="">Home-Electronics</Link></li>
                                     <li><a className='hover:text-[#ff497c]' href="">Home-NFT</a></li>
@@ -35,7 +35,7 @@ export const AllNavBar = () => {
                         <div className='home-dropdown text-gray-800 '>
                             <button className='navbar-button font-semibold h-24'>Shop</button>
                             <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
-                            <div className='home-content'>
+                            <div className='home-content shadow-lg rounded-md'>
                                 <ul className='list bg-white rounded-md'>
                                     <li><Link to="/ShopWithSidebar" className='hover:text-[#ff497c]' href="">Shop With Sidebar</Link></li>
                                     <li><Link to="/ShopNoSidebar" className='hover:text-[#ff497c]' href="">Shop No Sidebar</Link></li>
@@ -54,46 +54,46 @@ export const AllNavBar = () => {
                         <div className='home-dropdown text-gray-800'>
                             <button className='navbar-button font-semibold h-24'>Pages</button>
                             <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
-                            <div className='home-content'>
+                            <div className='home-content shadow-lg rounded-md'>
                                 <ul className='list bg-white rounded-md'>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">Wishlist</Link></li>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">Cart</Link></li>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">Checkout</Link></li>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">Account</Link></li>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">Sign Up</Link></li>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">Sign In</Link></li>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">Forgot Password</Link></li>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">Reser Password</Link></li>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">Privacy Policy</Link></li>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">Coming Soon</Link></li>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">404 Error</Link></li>
-                                    <li><Link to="" className='hover:text-[#ff497c]' href="">Typography</Link></li>
+                                    <li><Link to="/Wishlist" className='hover:text-[#ff497c]' href="">Wishlist</Link></li>
+                                    <li><Link to="/Cart" className='hover:text-[#ff497c]' href="">Cart</Link></li>
+                                    <li><Link to="/Checkout" className='hover:text-[#ff497c]' href="">Checkout</Link></li>
+                                    <li><Link to="/Account" className='hover:text-[#ff497c]' href="">Account</Link></li>
+                                    <li><Link to="/SignUp" className='hover:text-[#ff497c]' href="">Sign Up</Link></li>
+                                    <li><Link to="/SignIn" className='hover:text-[#ff497c]' href="">Sign In</Link></li>
+                                    <li><Link to="/ForgotPassword" className='hover:text-[#ff497c]' href="">Forgot Password</Link></li>
+                                    <li><Link to="/ResetPassword" className='hover:text-[#ff497c]' href="">Reser Password</Link></li>
+                                    <li><Link to="/PrivacyPolicy" className='hover:text-[#ff497c]' href="">Privacy Policy</Link></li>
+                                    <li><Link to="/ComingSoon" className='hover:text-[#ff497c]' href="">Coming Soon</Link></li>
+                                    <li><Link to="/Error404" className='hover:text-[#ff497c]' href="">404 Error</Link></li>
+                                    <li><Link to="/Typography" className='hover:text-[#ff497c]' href="">Typography</Link></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div className='home-dropdown text-gray-800'>
-                            <button className='navbar-button font-semibold h-24'>About</button>
+                            <button className='navbar-button font-semibold h-24'><Link to="/About">About</Link></button>
                         </div>
 
                         <div className='home-dropdown text-gray-800'>
                             <button className='navbar-button font-semibold h-24'>Blog</button>
                             <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
-                            <div className='home-content'>
+                            <div className='home-content shadow-lg rounded-md'>
                                 <ul className='list bg-white rounded-md'>
-                                    <li><Link to=""className='hover:text-[#ff497c]' href="">Blog List</Link></li>
-                                    <li><Link to=""className='hover:text-[#ff497c]' href="">Blog Grid</Link></li>
-                                    <li><Link to=""className='hover:text-[#ff497c]' href="">Standard Post</Link></li>
-                                    <li><Link to=""className='hover:text-[#ff497c]' href="">Gallery Post</Link></li>
-                                    <li><Link to=""className='hover:text-[#ff497c]' href="">Video Post</Link></li>
-                                    <li><Link to=""className='hover:text-[#ff497c]' href="">Audio Post</Link></li>
-                                    <li><Link to=""className='hover:text-[#ff497c]' href="">Quote Post</Link></li>
+                                    <li><Link to="/BlogList" className='hover:text-[#ff497c]' href="">Blog List</Link></li>
+                                    <li><Link to="/BlogGrid" className='hover:text-[#ff497c]' href="">Blog Grid</Link></li>
+                                    <li><Link to="/StandardPost" className='hover:text-[#ff497c]' href="">Standard Post</Link></li>
+                                    <li><Link to="/GalleryPost" className='hover:text-[#ff497c]' href="">Gallery Post</Link></li>
+                                    <li><Link to="/VideoPost" className='hover:text-[#ff497c]' href="">Video Post</Link></li>
+                                    <li><Link to="/AudioPost" className='hover:text-[#ff497c]' href="">Audio Post</Link></li>
+                                    <li><Link to="/QuotePost" className='hover:text-[#ff497c]' href="">Quote Post</Link></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div className='home-dropdown text-gray-800'>
-                            <button className='navbar-button font-semibold h-24'>Contact</button>
+                            <button className='navbar-button font-semibold h-24'><Link to="/Contact" href="">Contact</Link></button>
                         </div>
 
                     </div>
@@ -109,7 +109,7 @@ export const AllNavBar = () => {
                     {/* nav icon  */}
                     <div className='text-2xl text-gray-600 flex justify-between w-[120px] h-10'>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                            <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><i class="ri-heart-line "></i></li>
+                            <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><Link to="/Wishlist"><i class="ri-heart-line "></i></Link></li>
                         </ul>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
                             <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><i class="ri-shopping-cart-line "></i></li>
