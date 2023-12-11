@@ -98,8 +98,8 @@ const Footer = () => {
                                 <img src="./src/assets/home/asset 51.png" alt="" />
                             </div>
                             <div className='ml-5'>
-                                <img className='mb-4' src="./src/assets/home/asset 52.png" alt="" />
-                                <img src="./src/assets/home/asset 53.png" alt="" />
+                                <a href="#top-scroll"><img className='mb-4' src="./src/assets/home/asset 52.png" alt="" /></a>
+                                <a href="#top-scroll"><img src="./src/assets/home/asset 53.png" alt="" /></a>
                             </div>
                         </div>
                     </div>
@@ -111,19 +111,19 @@ const Footer = () => {
                 <div className='flex justify-between items-center mt-10 pb-5'>
                     <div className='text-2xl text-gray-600 flex justify-between w-[160px] h-10'>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                            <li className='nav-icon flex justify-center items-center rounded-full'><i class="ri-facebook-fill text-lg"></i></li>
+                            <li className='nav-icon flex justify-center items-center rounded-full'><a href="#top-scroll"><i class="ri-facebook-fill text-lg"></i></a></li>
                         </ul>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                            <li className='nav-icon flex justify-center items-center rounded-full'><i class="ri-instagram-line text-lg"></i></li>
+                            <li className='nav-icon flex justify-center items-center rounded-full'><a href="#top-scroll"><i class="ri-instagram-line text-lg"></i></a></li>
                         </ul>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                            <li className='nav-icon flex justify-center items-center rounded-full'><i class="ri-twitter-fill text-lg"></i></li>
+                            <li className='nav-icon flex justify-center items-center rounded-full'><a href="#top-scroll"><i class="ri-twitter-fill text-lg"></i></a></li>
                         </ul>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                            <li className='nav-icon flex justify-center items-center rounded-full '><i class="ri-linkedin-fill text-lg"></i></li>
+                            <li className='nav-icon flex justify-center items-center rounded-full '><a href="#top-scroll"><i class="ri-linkedin-fill text-lg"></i></a></li>
                         </ul>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                            <li className='nav-icon flex justify-center items-center rounded-full'><i class="ri-discord-line text-lg"></i></li>
+                            <li className='nav-icon flex justify-center items-center rounded-full'><a href="#top-scroll"><i class="ri-discord-line text-lg"></i></a></li>
                         </ul>
                     </div>
 

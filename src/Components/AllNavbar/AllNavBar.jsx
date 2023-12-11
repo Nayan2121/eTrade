@@ -1,6 +1,9 @@
 import React from 'react'
 import '../AllNavbar/AllNavstyle.css'
 import { Link } from 'react-router-dom'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 
 
 export const AllNavBar = () => {
@@ -131,20 +134,16 @@ export const NavBottom = () => {
         <>
             <div className='OFFER relative flex justify-center items-center'>
                 <img className='w-full h-16 object-cover' src="./src/assets/shop/shopwithsidebar/asset 29.png" alt="" />
+
+
                 <div className='absolute text-white '>
                     <i class="ri-arrow-left-line mr-10"></i>
                     <a className=' font-bold '>STUDENT NOW GET 10% OFF : <span className='underline hover:text-[#FF497C] duration-700'>GET OFFER</span></a>
                     <i class="ri-arrow-right-line ml-10"></i>
                 </div>
-            </div>
+            </div >
         </>
     )
 }
-
-
-
-
-
-
 
 

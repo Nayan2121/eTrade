@@ -1,7 +1,9 @@
 import React from 'react'
 import '../HomeDropdown/HomeDropdownstyle.css'
 import { Link } from 'react-router-dom';
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
 
 // first-button :-
 export const HomeDropdownHover1 = () => {

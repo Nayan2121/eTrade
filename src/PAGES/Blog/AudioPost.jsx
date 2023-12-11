@@ -28,23 +28,23 @@ const AudioPost = () => {
 
                     <div className='grid grid-cols-10 gap-8 mt-[100px]'>
 
-                        <div className='NAV-ICON col-span-1 pr-10 h-60 sticky top-28'>
+                    <div className='NAV-ICON col-span-1 pr-10 h-60 sticky top-28'>
                             <h1 className='text-gray-500 text-lg  text-center'>Share on:</h1>
                             <div className='text-center'>
                                 <ul className='btn-hover py-5 hover:text-slate-100 text-gray-500'>
-                                    <li className='nav-icon flex justify-center items-center'><i class="ri-facebook-fill text-xl "></i></li>
+                                    <li className='nav-icon flex justify-center items-center'><a href="#top"><i class="ri-facebook-fill text-xl"></i></a></li>
                                 </ul>
                                 <ul className='btn-hover py-5 hover:text-slate-100 text-gray-500'>
-                                    <li className='nav-icon flex justify-center items-center'><i class="ri-instagram-line text-xl "></i></li>
+                                    <li className='nav-icon flex justify-center items-center'><a href="#top"><i class="ri-instagram-line text-xl"></i></a></li>
                                 </ul>
                                 <ul className='btn-hover py-5 hover:text-slate-100 text-gray-500'>
-                                    <li className='nav-icon flex justify-center items-center'><i class="ri-twitter-fill text-xl "></i></li>
+                                    <li className='nav-icon flex justify-center items-center'><a href="#top"><i class="ri-twitter-fill text-xl "></i></a></li>
                                 </ul>
                                 <ul className='btn-hover py-5 hover:text-slate-100 text-gray-500'>
-                                    <li className='nav-icon flex justify-center items-center'><i class="ri-linkedin-fill text-xl "></i></li>
+                                    <li className='nav-icon flex justify-center items-center'><a href="#top"><i class="ri-linkedin-fill text-xl "></i></a></li>
                                 </ul>
                                 <ul className='btn-hover py-5 hover:text-slate-100 text-gray-500'>
-                                    <li className='nav-icon flex justify-center items-center'><i class="ri-discord-line text-xl "></i></li>
+                                    <li className='nav-icon flex justify-center items-center'><a href="#top"><i class="ri-discord-line text-xl "></i></a></li>
                                 </ul>
                             </div>
                         </div>

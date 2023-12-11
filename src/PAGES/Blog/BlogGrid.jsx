@@ -11,7 +11,7 @@ const BlogGrid = () => {
     return (
         <>
             <div>
-                <section className='BLOG-DROPDOWN'>
+                <section className='BLOG-DROPDOWN' id='top-scroll'>
                     <AllTopBar />
                 </section>
 
@@ -418,22 +418,22 @@ const BlogGrid = () => {
                             <div className="BUTTON-PART">
                                 <div className="mt-20">
                                     <ul className="flex">
-                                        <a href="#">
+                                        <a href="#top-scroll">
                                             <li className="border px-4 py-2 mr-2 rounded-lg bg-[#3577F0] text-white text-lg">1</li>
                                         </a>
-                                        <a href="#">
+                                        <a href="#top-scroll">
                                             <li className="border px-4 py-2 mr-2 rounded-lg hover:text-white hover:bg-[#3577F0] duration-300 text-lg">2</li>
                                         </a>
-                                        <a href="#">
+                                        <a href="#top-scroll">
                                             <li className="border px-4 py-2 mr-2 rounded-lg hover:text-white hover:bg-[#3577F0] duration-300 text-lg">3</li>
                                         </a>
-                                        <a href="#">
+                                        <a href="#top-scroll">
                                             <li className="border px-4 py-2 mr-2 rounded-lg hover:text-white hover:bg-[#3577F0] duration-300 text-lg">4</li>
                                         </a>
-                                        <a href="#">
+                                        <a href="#top-scroll">
                                             <li className="border px-4 py-2 mr-2 rounded-lg hover:text-white hover:bg-[#3577F0] duration-300 text-lg">5</li>
                                         </a>
-                                        <a href="#">
+                                        <a href="#top-scroll">
                                             <li className="border px-4 py-2 mr-2 rounded-lg text-gray-600 hover:text-white hover:bg-[#3577F0] duration-300 text-md">
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </li>

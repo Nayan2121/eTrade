@@ -10,9 +10,10 @@ import '../Home/HomeStyle.css'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
+
     return (
         <>
-            <div className='Body bg-white '>
+            <div className='Body bg-white ' id='top-scroll'>
 
                 <section className='HOME-DROPDOWN py-2 '>
                     <TopBar />
@@ -175,7 +176,9 @@ const Home = () => {
                             </div>
                         </div>
 
+
                         <div className="grid grid-cols-7 gap-x-10 mt-10">
+                        
                             <div className="border border-gray-200 rounded-md py-[28px] px-[12px] text-center hover:shadow-2xl duration-500">
                                 <div className="flex justify-center">
                                     <img className="mb-3" src="./src/assets/Home/asset 15.png" alt="" />
@@ -218,6 +221,7 @@ const Home = () => {
                                 </div>
                                 <p className='text-gray-800'>PC Gaming</p>
                             </div>
+                           
                         </div>
                     </div>
                 </section>
@@ -610,3 +614,4 @@ const Home = () => {
 }
 
 export default Home
+
