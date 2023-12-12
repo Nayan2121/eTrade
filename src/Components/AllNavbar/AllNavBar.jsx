@@ -1,12 +1,16 @@
 import React from 'react'
 import '../AllNavbar/AllNavstyle.css'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 
 
 export const AllNavBar = () => {
+
+    const active = 'text-[#ff497c]'
+    const normal = 'text-black'
+
     return (
 
         <>
@@ -14,9 +18,9 @@ export const AllNavBar = () => {
                 <div className='flex justify-between items-center container mx-auto'>
 
                     {/* logo  */}
-                    <Link to="/">
+                    <NavLink to="/">
                         <img src="./src/assets/home/asset 0.png" alt="" />
-                    </Link>
+                    </NavLink>
 
                     {/* navbar list  */}
                     <div className='grid grid-cols-6 gap-x-10'>
@@ -24,8 +28,8 @@ export const AllNavBar = () => {
                             <button className='font-semibold underline decoration-[2px] underline-offset-4 h-24 '><span className='text-gray-800 hover:text-black'>Home</span><i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i></button>
                             <div className='home-content shadow-lg rounded-md'>
                                 <ul className='list bg-white rounded-md'>
-                                    <li><Link to="/" className='text-[#ff497c]' href="">Home-Electronics</Link></li>
-                                    <li><a className='hover:text-[#ff497c]' href="">Home-NFT</a></li>
+                                    <li><NavLink to="/"><a className='text-[#ff497c]' href=''>Home-Electronics</a></NavLink></li>
+                                    <li><a className='hover:text-[#ff497c]' href="" >Home-NFT</a></li>
                                     <li><a className='hover:text-[#ff497c]' href="">Home-Fashion</a></li>
                                     <li><a className='hover:text-[#ff497c]' href="">Home-Jewellery</a></li>
                                     <li><a className='hover:text-[#ff497c]' href="">Home-Furniture</a></li>
@@ -38,18 +42,18 @@ export const AllNavBar = () => {
                         <div className='home-dropdown text-gray-800 '>
                             <button className='navbar-button font-semibold h-24'>Shop</button>
                             <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
-                            <div className='home-content shadow-lg rounded-md'>
+                            <div className='home-content shadow-lg rounded-md '>
                                 <ul className='list bg-white rounded-md'>
-                                    <li><Link to="/ShopWithSidebar" className='hover:text-[#ff497c]' href="">Shop With Sidebar</Link></li>
-                                    <li><Link to="/ShopNoSidebar" className='hover:text-[#ff497c]' href="">Shop No Sidebar</Link></li>
-                                    <li><Link to="/ProductV1" className='hover:text-[#ff497c]' href="">Product Variation 1</Link></li>
-                                    <li><Link to="/ProductV2" className='hover:text-[#ff497c]' href="">Product Variation 2</Link></li>
-                                    <li><Link to="/ProductV3" className='hover:text-[#ff497c]' href="">Product Variation 3</Link></li>
-                                    <li><Link to="/ProductV4" className='hover:text-[#ff497c]' href="">Product Variation 4</Link></li>
-                                    <li><Link to="/ProductV5" className='hover:text-[#ff497c]' href="">Product Variation 5</Link></li>
-                                    <li><Link to="/ProductV6" className='hover:text-[#ff497c]' href="">Product Variation 6</Link></li>
-                                    <li><Link to="/ProductV7" className='hover:text-[#ff497c]' href="">Product Variation 7</Link></li>
-                                    <li><Link to="/ProductV8" className='hover:text-[#ff497c]' href="">Product Variation 8</Link></li>
+                                    <li><NavLink to="/ShopWithSidebar" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Shop With Sidebar</a> </NavLink></li>
+                                    <li><NavLink to="/ShopNoSidebar" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Shop No Sidebar</a></NavLink></li>
+                                    <li><NavLink to="/ProductV1" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Product Variation 1</a> </NavLink></li>
+                                    <li><NavLink to="/ProductV2" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Product Variation 2</a> </NavLink></li>
+                                    <li><NavLink to="/ProductV3" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Product Variation 3</a> </NavLink></li>
+                                    <li><NavLink to="/ProductV4" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Product Variation 4</a> </NavLink></li>
+                                    <li><NavLink to="/ProductV5" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Product Variation 5</a> </NavLink></li>
+                                    <li><NavLink to="/ProductV6" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Product Variation 6</a> </NavLink></li>
+                                    <li><NavLink to="/ProductV7" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Product Variation 7</a> </NavLink></li>
+                                    <li><NavLink to="/ProductV8" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Product Variation 8</a> </NavLink></li>
                                 </ul>
                             </div>
                         </div>
@@ -59,18 +63,18 @@ export const AllNavBar = () => {
                             <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
                             <div className='home-content shadow-lg rounded-md'>
                                 <ul className='list bg-white rounded-md'>
-                                    <li><Link to="/Wishlist" className='hover:text-[#ff497c]' href="">Wishlist</Link></li>
-                                    <li><Link to="/Cart" className='hover:text-[#ff497c]' href="">Cart</Link></li>
-                                    <li><Link to="/Checkout" className='hover:text-[#ff497c]' href="">Checkout</Link></li>
-                                    <li><Link to="/Account" className='hover:text-[#ff497c]' href="">Account</Link></li>
-                                    <li><Link to="/SignUp" className='hover:text-[#ff497c]' href="">Sign Up</Link></li>
-                                    <li><Link to="/SignIn" className='hover:text-[#ff497c]' href="">Sign In</Link></li>
-                                    <li><Link to="/ForgotPassword" className='hover:text-[#ff497c]' href="">Forgot Password</Link></li>
-                                    <li><Link to="/ResetPassword" className='hover:text-[#ff497c]' href="">Reser Password</Link></li>
-                                    <li><Link to="/PrivacyPolicy" className='hover:text-[#ff497c]' href="">Privacy Policy</Link></li>
-                                    <li><Link to="/ComingSoon" className='hover:text-[#ff497c]' href="">Coming Soon</Link></li>
-                                    <li><Link to="/Error404" className='hover:text-[#ff497c]' href="">404 Error</Link></li>
-                                    <li><Link to="/Typography" className='hover:text-[#ff497c]' href="">Typography</Link></li>
+                                    <li><NavLink to="/Wishlist" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Wishlist </a></NavLink></li>
+                                    <li><NavLink to="/Cart" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Cart </a></NavLink></li>
+                                    <li><NavLink to="/Checkout" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Checkout </a></NavLink></li>
+                                    <li><NavLink to="/Account" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Account </a></NavLink></li>
+                                    <li><NavLink to="/SignUp" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Sign Up </a></NavLink></li>
+                                    <li><NavLink to="/SignIn" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Sign In </a></NavLink></li>
+                                    <li><NavLink to="/ForgotPassword" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Forgot Password </a></NavLink></li>
+                                    <li><NavLink to="/ResetPassword" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Reset Password </a></NavLink></li>
+                                    <li><NavLink to="/PrivacyPolicy" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Privacy Policy </a></NavLink></li>
+                                    <li><NavLink to="/ComingSoon" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Coming Soon </a></NavLink></li>
+                                    <li><NavLink to="/Error404" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">404 Erro </a></NavLink></li>
+                                    <li><NavLink to="/Typography" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">ypography </a></NavLink></li>
                                 </ul>
                             </div>
                         </div>
@@ -84,13 +88,13 @@ export const AllNavBar = () => {
                             <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
                             <div className='home-content shadow-lg rounded-md'>
                                 <ul className='list bg-white rounded-md'>
-                                    <li><Link to="/BlogList" className='hover:text-[#ff497c]' href="">Blog List</Link></li>
-                                    <li><Link to="/BlogGrid" className='hover:text-[#ff497c]' href="">Blog Grid</Link></li>
-                                    <li><Link to="/StandardPost" className='hover:text-[#ff497c]' href="">Standard Post</Link></li>
-                                    <li><Link to="/GalleryPost" className='hover:text-[#ff497c]' href="">Gallery Post</Link></li>
-                                    <li><Link to="/VideoPost" className='hover:text-[#ff497c]' href="">Video Post</Link></li>
-                                    <li><Link to="/AudioPost" className='hover:text-[#ff497c]' href="">Audio Post</Link></li>
-                                    <li><Link to="/QuotePost" className='hover:text-[#ff497c]' href="">Quote Post</Link></li>
+                                    <li><NavLink to="/BlogList" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Blog List </a></NavLink></li>
+                                    <li><NavLink to="/BlogGrid" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Blog Grid </a></NavLink></li>
+                                    <li><NavLink to="/StandardPost" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Standard Post </a></NavLink></li>
+                                    <li><NavLink to="/GalleryPost" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Gallery Post </a></NavLink></li>
+                                    <li><NavLink to="/VideoPost" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Video Post </a></NavLink></li>
+                                    <li><NavLink to="/AudioPost" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Audio Post </a></NavLink></li>
+                                    <li><NavLink to="/QuotePost" className={({ isActive }) => isActive ? active : normal}><a className='hover:text-[#ff497c]' href="">Quote Post </a></NavLink></li>
                                 </ul>
                             </div>
                         </div>
@@ -145,5 +149,3 @@ export const NavBottom = () => {
         </>
     )
 }
-
-
