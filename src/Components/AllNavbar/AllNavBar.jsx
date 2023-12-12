@@ -1,10 +1,6 @@
 import React from 'react'
 import '../AllNavbar/AllNavstyle.css'
 import { Link, NavLink } from 'react-router-dom'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import 'swiper/css/navigation';
-
 
 export const AllNavBar = () => {
 
@@ -25,7 +21,7 @@ export const AllNavBar = () => {
                     {/* navbar list  */}
                     <div className='grid grid-cols-6 gap-x-10'>
                         <div className='home-dropdown'>
-                            <button className='font-semibold underline decoration-[2px] underline-offset-4 h-24 '><span className='text-gray-800 hover:text-black'>Home</span><i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i></button>
+                            <button className='font-semibold underline decoration-[2px] underline-offset-4 h-24 '><span className='text-gray-800 hover:text-black'>Home</span></button>
                             <div className='home-content shadow-lg rounded-md'>
                                 <ul className='list bg-white rounded-md'>
                                     <li><NavLink to="/"><a className='text-[#ff497c]' href=''>Home-Electronics</a></NavLink></li>

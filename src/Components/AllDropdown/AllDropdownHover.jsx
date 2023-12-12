@@ -91,7 +91,7 @@ export const AllTopBar = () => {
             </div>
             <AllRightpart />
           </div>
-      </div>``
+      </div>
     </>
   )
 }
