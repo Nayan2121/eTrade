@@ -43,6 +43,7 @@ import TermsOfUse from '../Pages/TermsOfUse'
 
 
 
+
 export default function AllPages() {
   return (
     <>
@@ -95,6 +96,8 @@ export default function AllPages() {
 
           {/* TERMS-OF-USE */}
           <Route path='/TermsOfUse' element={<TermsOfUse />}></Route>
+          
+
         </Routes>
       </BrowserRouter>
 
