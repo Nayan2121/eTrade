@@ -107,12 +107,12 @@ const HomeNavBar = () => {
                     <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
                         <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><i class="ri-shopping-cart-line "></i></li>
                     </ul>
-                    {/* <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                        <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><i class="ri-user-3-line "></i></li>
-                    </ul> */}
                     <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                    <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><Profile/></li>
+                        <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><i class="ri-user-3-line "></i></li>
                     </ul>
+                    {/* <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
+                    <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><Profile/></li>
+                    </ul> */}
                     
                 </div>
             </div>
