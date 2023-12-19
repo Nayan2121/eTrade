@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Components/HomeNavbar/HomeNavstyle.css'
 import '../Components/AllDropdown/AllDropdownstyle.css'
+import { Link } from 'react-router-dom';
 
 const Profile = () => {
     function myFunction() {
@@ -20,24 +21,24 @@ const Profile = () => {
     }
     return (
         <div className='dropdown m-10'>
-            <a onClick={myFunction} className='dropbtn bg-black rounded-full p-3'><i class="ri-user-3-line"></i>
-                <div id='myDropdown15' className='dropdown-content'>
-                    <div className='border p-5 rounded-md w-56 bg-white mt-5'>
+            <a onClick={myFunction} className='dropbtn rounded-full p-3 '><i class="ri-user-3-line"></i>
+                <div id='myDropdown15' className='dropdown-content right-3 shadow-md '>
+                    <div className='border p-5 rounded-md w-64 bg-white mt-5 '>
                         <div className='text-gray-400 text-[12px]'>
                             QUICKLINKS
                         </div>
-                        <div>
+                        <div >
                             <div>
-                                <p className='text-base border-b py-3 text-black'>My Account</p>
+                                <Link to="/Account" href="" className='text-base border-b py-3 text-black hover:text-blue-500'>My Account</Link>
                             </div>
                             <div>
-                                <p className='text-base border-b py-3 text-black'>Initiate return</p>
+                                <a href="" className='text-base border-b py-3 text-black hover:text-blue-500'>Initiate return</a>
                             </div>
                             <div>
-                                <p className='text-base border-b py-3 text-black'>Support</p>
+                                <a href="" className='text-base border-b py-3 text-black hover:text-blue-500'>Support</a>
                             </div>
                             <div>
-                                <p className='text-base border-b py-3 text-black'>Language</p>
+                                <a href="" className='text-base border-b py-3 text-black hover:text-blue-500'>Language</a>
                             </div>
                             <div className='relative text-center w-full py-3 rounded-md text-white font-bold z-10 mt-6 text-base'>
                                 <a href="" className='
@@ -56,7 +57,7 @@ const Profile = () => {
                             </div>
                             <div className='text-[12px] flex mt-3'>
                                 <p className='text-gray-400'>No account yet?</p>
-                                <a className='ml-2' href=""><span className='underline text-black underline-offset-4 font-semibold'>REGISTER HERE</span></a>
+                                <Link to="/SignUp" className='ml-2 ' href=""><span className='underline decoration-slate-400  decoration-2 text-black underline-offset-4 font-semibold hover:text-blue-500 hover:decoration-blue-500'>REGISTER HERE</span></Link>
                             </div>
                         </div>
                     </div>

@@ -1,14 +1,16 @@
 import React from 'react'
 import AllPages from './PAGES/AllPagesComponents/AllPages'
 import Profile from './Components/Profile'
+import Cart from './Components/Cart'
 
 
 
 const App = () => {
   return (
     <div>
-      <AllPages/>
+      {/* <AllPages/> */}
       {/* <Profile/> */}
+      <Cart/>
     </div>
   )
 }

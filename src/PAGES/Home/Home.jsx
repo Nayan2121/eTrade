@@ -305,7 +305,7 @@ const Home = () => {
 
                             <div className='grid grid-cols-3 gap-10'>
                                 <div>
-                                    <div className='bg-white p-12 text-gray-500 leading-7 rounded-lg relative'>
+                                    <div className='bg-white p-12 text-gray-500 leading-7 rounded-lg relative shadow-lg'>
                                         <p>“ It’s amazing how much easier it has been to
                                             meet new people and create instantly non
                                             connections. I have the exact same personal
@@ -322,7 +322,7 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className='mt-10'>
-                                    <div className='bg-white p-12 text-gray-500 leading-7 rounded-lg relative'>
+                                    <div className='bg-white p-12 text-gray-500 leading-7 rounded-lg relative shadow-lg'>
                                         <p>“ It’s amazing how much easier it has been to
                                             meet new people and create instantly non
                                             connections. I have the exact same personal
@@ -339,7 +339,7 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <div className='bg-white p-12 text-gray-500 leading-7 rounded-lg relative'>
+                                    <div className='bg-white p-12 text-gray-500 leading-7 rounded-lg relative shadow-lg'>
                                         <p>“ It’s amazing how much easier it has been to
                                             meet new people and create instantly non
                                             connections. I have the exact same personal

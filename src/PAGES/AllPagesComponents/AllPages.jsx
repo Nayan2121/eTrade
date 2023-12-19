@@ -47,6 +47,8 @@ import TermsOfUse from '../Pages/TermsOfUse'
 export default function AllPages() {
   return (
     <>
+    <div className='select-none'>
+
       {/* HOME-SECTION-COMPONENTS */}
       <BrowserRouter>
         <Routes>
@@ -101,6 +103,7 @@ export default function AllPages() {
         </Routes>
       </BrowserRouter>
 
+      </div>
 
     </>
   )
