@@ -1,0 +1,86 @@
+[
+    {
+        "product_id": 1,
+        "product_name": "Gaming Controll",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 3.png"
+    },
+    {
+        "product_id": 2,
+        "product_name": "RGB Keyboard",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 4.png"
+    },
+    {
+        "product_id": 3,
+        "product_name": "Logitech StreamCam",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 5.png"
+    },
+    {
+        "product_id": 4,
+        "product_name": "Home-Theater Speaker",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 6.png"
+    },
+    {
+        "product_id": 5,
+        "product_name": "Blutooth Speaker",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 7.png"
+    },
+    {
+        "product_id": 6,
+        "product_name": "Wireless Mouse",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 8.png"
+    },
+    {
+        "product_id": 7,
+        "product_name": "Wireless Headphone",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 9.png"
+    },
+    {
+        "product_id": 8,
+        "product_name": "3D Gaming Controller",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 10.png"
+    },
+    {
+        "product_id": 9,
+        "product_name": "Jacket",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 11.png"
+    },
+    {
+        "product_id": 10,
+        "product_name": "LipStick",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 12.png"
+    },
+    {
+        "product_id": 11,
+        "product_name": "Perfume",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 13.png"
+    },
+    {
+        "product_id": 12,
+        "product_name": "LipStick With Foundation",
+        "new_price": "$29.99",
+        "old_price": "$49.99",
+        "product_img": "./src/assets/shop/shopnosidebar/asset 14.png"
+    }
+]

@@ -38,6 +38,7 @@ import AudioPost from '../Blog/AudioPost'
 import QuotePost from '../Blog/QuotePost'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import TermsOfUse from '../Pages/TermsOfUse'
+import SideCart from '../../Components/SideCart'
 
 
 
@@ -98,6 +99,7 @@ export default function AllPages() {
 
           {/* TERMS-OF-USE */}
           <Route path='/TermsOfUse' element={<TermsOfUse />}></Route>
+          {/* <Route path='/SideCart' element={<SideCart />}></Route> */}
           
 
         </Routes>
