@@ -135,6 +135,7 @@ const ShopNoSidebar = () => {
                     <Footer />
                 </section>
             </div>
+           
         </>
     )
 }
