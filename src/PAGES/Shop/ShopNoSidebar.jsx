@@ -6,23 +6,9 @@ import Speaker from '../../Components/Speaker'
 import SubscribePhoto from '../../Components/SubscribePhoto'
 import Footer from '../../Components/Footer/Footer'
 import Data from "../../../data.json"
+import './ShopNoSidebar.css'
 
 const ShopNoSidebar = () => {
-    function myFunction() {
-        document.getElementById("categories").classList.toggle("show");
-    }
-    window.onclick = function (event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }
     return (
         <>
             <div>
@@ -42,36 +28,82 @@ const ShopNoSidebar = () => {
                     <Speaker p1="My Account" p2="Explore All Products" />
                 </section>
 
-                <section className='container mx-auto'>
-                    <div className="dropdown mr-8 z-30 ">
-                        <button onClick={myFunction} className="dropbtn text-lg border-2 border-slate-300 rounded-md p-3 px-5 cursor-pointer">Categories <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs pl-2"></i></button>
-                        <div id="categories" className="dropdown-content w-[150px] border rounded-none border-black bg-white shadow-lg text-center">
-                            <a className='w-[148px] leading-relaxed hover:bg-[#3577f0] hover:text-white' href="#home">Categories</a>
-                            <a className='w-[148px] leading-relaxed hover:bg-[#3577f0] hover:text-white' href="#about">Fashion</a>
-                            <a className='w-[148px] leading-relaxed hover:bg-[#3577f0] hover:text-white' href="#contact">Electronics</a>
-                            <a className='w-[148px] leading-relaxed hover:bg-[#3577f0] hover:text-white' href="#contact">Furniture</a>
-                            <a className='w-[148px]  leading-relaxed hover:bg-[#3577f0] hover:text-white' href="#contact">Beauty</a>
+                <section className='container mx-auto mt-20 mb-10'>
+                    <div className='flex justify-between px-7'>
+                        <div className=''>
+                            <select name="option" id="option" placeholder='Categories' className='text-lg border-2 border-slate-300 rounded-md p-3 pr-3 m-2'>
+                                <option value="a"><a href="">Categories</a></option>
+                                <option value="b"><a href="">Fashion</a></option>
+                                <option value="b"><a href="">Electronics</a></option>
+                                <option value="b"><a href="">Furniture</a></option>
+                                <option value="b"><a href="">Beauty</a></option>
+                            </select>
+                            <select name="option" id="option" placeholder='Colors' className='text-lg border-2 border-slate-300 rounded-md p-3 m-2'>
+                                <option value="b"><a href="">Colors</a></option>
+                                <option value="a"><a href="">Red</a></option>
+                                <option value="b"><a href="">Blue</a></option>
+                                <option value="b"><a href="">Green</a></option>
+                                <option value="b"><a href="">Pink</a></option>
+                            </select>
+                            <select name="option" id="option" placeholder='Price Range' className='text-lg border-2 border-slate-300 rounded-md p-3 m-2'>
+                                <option value="a"><a href="">Price Range</a></option>
+                                <option value="b"><a href="">0 - 100</a></option>
+                                <option value="b"><a href="">100 - 500</a></option>
+                                <option value="b"><a href="">500 - 1000</a></option>
+                                <option value="b"><a href="">1000 - 5000</a></option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="option" id="option" placeholder='Sort By Latest' className='text-lg border-2 border-slate-300 rounded-md p-3 m-2'>
+                                <option value="a"><a href="">Sort By Latest</a></option>
+                                <option value="b"><a href="">Sort By Name</a></option>
+                                <option value="b"><a href="">Sort By Price</a></option>
+                                <option value="b"><a href="">Sort By Viewed</a></option>
+                            </select>
                         </div>
                     </div>
                 </section>
-                <section className='grid grid-cols-4 container mx-auto '>
+                <section className='grid grid-cols-4 container mx-auto gap-10'>
                     {
                         Data.map(data => {
                             return (
                                 <>
-                                    <div className=''>
-                                        <table className=''>
-                                            <tr>
-                                                <th>
-                                                    <img className='w-full h-72' src={data.product_img} alt="" />
+                                    <div className='flex justify-center '>
+                                        <table className='relative'>
+                                            <tr className=''>
+                                                <th className='group overflow-hidden '>
+                                                    <img className='w-full h-72 group-hover:scale-110 duration-500 ' src={data.product_img} alt="" />
                                                 </th>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <h1>{data.product_name}</h1>
-                                                    <h1>{data.new_price} <span>{data.old_price}</span></h1>
+                                                <td className='leading-10'>
+                                                    <a className='text-[#777777] font-semibold block' href=''>{data.product_name}</a>
+                                                    <a className='text-lg font-semibold' href=''>{data.new_price} <span className='text-[#d6d6d6]'> <del> {data.old_price}</del></span></a>
                                                 </td>
                                             </tr>
+                                            <div className='absolute bottom-20 flex w-full justify-center items-center '>
+                                                <div className='w-10 h-10 mr-2 hover:scale-110 duration-500 border bg-white rounded-md flex justify-center items-center'>
+                                                    <i class="ri-heart-line "></i>
+                                                </div>
+                                                <div className='relative w-28 z-10 text-center p-2 rounded-md text-white font-semibold'>
+                                                    <a href="" className='
+                                                        before:absolute
+                                                        before:content-[""]
+                                                        before:bg-[#ff497c]
+                                                        before:top-0
+                                                        before:bottom-0
+                                                        before:left-0
+                                                        before:right-0
+                                                        before:hover:scale-105
+                                                        before:duration-300
+                                                        before:rounded-md
+                                                        before:-z-10
+                                                    '>Add to Cart</a>
+                                                </div>
+                                                <div className='w-10 h-10 ml-2 flex justify-center items-center border bg-white rounded-md text-slate-700'>
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </div>
+                                            </div>
                                         </table>
                                     </div>
                                 </>
@@ -80,6 +112,23 @@ const ShopNoSidebar = () => {
                         )
                     }
                 </section>
+                <div className='container mx-auto flex justify-center my-20' >
+                    <div className='relative w-56 z-10 text-center p-2 py-4  rounded-md text-[#777777] font-semibold'>
+                        <a href="#top" className='
+                                                        before:absolute
+                                                        before:content-[""]
+                                                        before:bg-[#F6F7FB]
+                                                        before:top-0
+                                                        before:bottom-0
+                                                        before:left-0
+                                                        before:right-0
+                                                        before:hover:scale-105
+                                                        before:duration-300
+                                                        before:rounded-md
+                                                        before:-z-10
+                                                    '>View All Products</a>
+                    </div>
+                </div>
 
                 <section className='SHOP-FOOTER'>
                     <SubscribePhoto />
