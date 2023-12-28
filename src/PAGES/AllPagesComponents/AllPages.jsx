@@ -39,7 +39,7 @@ import QuotePost from '../Blog/QuotePost'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import TermsOfUse from '../Pages/TermsOfUse'
 import SideCart from '../../Components/SideCart'
-
+import ScrollToTop from '../ScrollToTop'
 
 
 
@@ -52,6 +52,7 @@ export default function AllPages() {
 
       {/* HOME-SECTION-COMPONENTS */}
       <BrowserRouter>
+      <ScrollToTop/>
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/*' element={<Error404 />}></Route>
