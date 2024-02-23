@@ -1,0 +1,122 @@
+/* nav-list-item */
+.home-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.home-button {
+    border: none;
+}
+
+.home-content {
+    display: none;
+    position: absolute;
+    width: 15rem;
+    z-index: 100;
+    top: 90px;
+}
+
+.home-content ul li {
+    border-radius: 5px;
+    color: black;
+    line-height: 35px;
+    display: block;
+}
+
+.home-dropdown:hover button {
+    color: black
+}
+
+.home-dropdown:hover .home-content {
+    display: block;
+}
+
+.list {
+    padding: 10px 20px;
+}
+
+/* navbar-underline-hover */
+.navbar-button ul {
+    position: absolute;
+}
+
+.navbar-button {
+    position: relative;
+}
+
+.navbar-button:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    left: 0;
+    background: black;
+    transition: width .3s ease;
+}
+
+.navbar-button:hover:after {
+    width: 100%;
+    background: black;
+}
+
+
+/* Navbar-Icon */
+.btn-hover {
+    position: relative;
+}
+
+.btn-hover:active {
+    transform: scale(0.97);
+}
+
+.btn-hover:hover .nav-icon {
+    width: 2em;
+    height: 2em;
+    background-color: #ff497c;
+}
+
+.nav-icon {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 200ms;
+    border-radius: 100%;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* icon-menu open and hide  */
+.details-menu {
+    display: none;
+  }
+  
+  .details-menu.open {
+    display: block;
+  }
+
+
+  /* icon-sidebar All open and hide  */
+  .sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 100;
+  }
+  .sidebar.open {
+    width: 600px;
+  }
+
+
+  /* search icon open and hide  */
+  .popup {
+    display: none;
+    position: fixed;
+  }
