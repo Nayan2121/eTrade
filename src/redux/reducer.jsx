@@ -16,7 +16,7 @@ export const cartData = (data = [], action) => {
             return [...data]
 
         case INCREMENT_QUANTITY:
-            let incrmentItem = data.filter((item) => {
+            let incrementItem = data.filter((item) => {
                 if (item.id === action.data) {
                     let quantity = item.quantity += 1;
                     let price = item.rate += item.newprice;
@@ -27,7 +27,7 @@ export const cartData = (data = [], action) => {
                     return item;
                 }
             })
-            return [...incrmentItem];
+            return [...incrementItem];
 
 
         case DECREMENT_QUANTITY:
