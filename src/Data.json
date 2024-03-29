@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "name": "Gaming remote",
+        "newprice": 30,
+        "oldprice": 40,
+        "quantity" : 1,
+        "rate":30,
+        "offer": "10%OFF",
+        "image": "./src/assets/shop/shopnosidebar/asset 3.png",
+        "category":"Accessories"
+    },
+    {
+        "id": 2,
+        "name": "Keyboard Lighting",
+        "newprice": 40,
+        "oldprice": 50,
+        "quantity" : 1,
+        "rate":40,
+        "image": "./src/assets/shop/shopnosidebar/asset 4.png",
+        "category":"Accessories"
+    },
+    {
+        "id": 3,
+        "name": "HD camera",
+        "newprice": 45,
+        "oldprice": 60,
+        "quantity" : 1,
+        "rate":45,
+        "offer": "25%OFF",
+        "image": "./src/assets/shop/shopnosidebar/asset 5.png",
+        "category":"Accessories"
+    },
+    {
+        "id": 4,
+        "name": "Home Theater",
+        "newprice": 50,
+        "oldprice": 60,
+        "quantity" : 1,
+        "rate":50,
+        "image": "./src/assets/shop/shopnosidebar/asset 6.png",
+        "category": "sound"
+    },
+    {
+        "id": 5,
+        "name": "Blutooth Speaker",
+        "newprice": 38,
+        "oldprice": 50,
+        "quantity" : 1,
+        "rate":38,
+        "offer": "10%OFF",
+        "image": "./src/assets/shop/shopnosidebar/asset 7.png",
+        "category":"sound"
+    },
+    {
+        "id": 6,
+        "name": "Mouse",
+        "newprice": 25,
+        "oldprice": 40,
+        "quantity" : 1,
+        "rate":25,
+        "image": "./src/assets/shop/shopnosidebar/asset 8.png",
+        "category":"Accessories"
+    },
+    {
+        "id": 7,
+        "name": "Headphone",
+        "newprice": 15,
+        "oldprice": 20,
+        "quantity" : 1,
+        "rate":15,
+        "offer": "5%OFF",
+        "image": "./src/assets/shop/shopnosidebar/asset 9.png",
+        "category": "sound"
+    },
+    {
+        "id": 8,
+        "name": "3D Gaming remote",
+        "newprice": 60,
+        "oldprice": 80,
+        "quantity" : 1,
+        "rate":60,
+        "image": "./src/assets/shop/shopnosidebar/asset 10.png",
+        "category":"Accessories"
+    },
+    {
+        "id": 9,
+        "name": "Jacket",
+        "newprice": 40,
+        "oldprice": 50,
+        "quantity" : 1,
+        "rate":40,
+        "offer": "12%OFF",
+        "image": "./src/assets/shop/shopnosidebar/asset 11.png",
+        "category":"cosmetic"
+    },
+    {
+        "id": 10,
+        "name": "Lipstick",
+        "newprice": 55,
+        "oldprice": 70,
+        "quantity" : 1,
+        "rate":60,
+        "image": "./src/assets/shop/shopnosidebar/asset 12.png",
+        "category":"cosmetic"
+    },
+    {
+        "id": 11,
+        "name": "Perfume",
+        "newprice": 60,
+        "oldprice": 80,
+        "quantity" : 1,
+        "rate":60,
+        "image": "./src/assets/shop/shopnosidebar/asset 13.png",
+        "category":"cosmetic"
+    },
+    {
+        "id": 12,
+        "name": "Lipstick Kit",
+        "newprice": 45,
+        "oldprice": 65,
+        "quantity" : 1,
+        "rate":60,
+        "offer": "22%OFF",
+        "image": "./src/assets/shop/shopnosidebar/asset 14.png",
+        "category":"cosmetic"
+    }
+]
